@@ -1,7 +1,8 @@
 # Intuit UI craft demo Application
 
 # Weather App
-![image](https://github.com/anaparty33/ui-craft-demo/assets/47445074/70a6af52-5701-43e1-8bf7-b816a414e308)
+
+![image](https://github.com/anaparty33/ui-craft-demo/assets/47445074/e0ce7397-a775-48df-948d-c5cda33f50d5)
 
 [Link to weather app](https://elaborate-starship-16546e.netlify.app/)
 
