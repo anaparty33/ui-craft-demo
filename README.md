@@ -1,27 +1,22 @@
-# React + TypeScript + Vite
+# Intuit UI craft demo Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Weather App
+![image](https://github.com/anaparty33/ui-craft-demo/assets/47445074/70a6af52-5701-43e1-8bf7-b816a414e308)
 
-Currently, two official plugins are available:
+Link to [https://elaborate-starship-16546e.netlify.app/]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+While rendering, this app by default takes the Los Angeles City and displays weather information for it.
 
-## Expanding the ESLint configuration
+I recommend playing around using the search input field  (which is powered by Google Autocomplete for places ), navigation logo, and units option to the top right 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Features
+- User can search for  any city, or place or use a postal code to search for important weather information
+- User can check the current location weather by clicking the navigate icon
+- Can toggle units  Celsius and Fahrenheit.  Unit conversion is done by local utilities which can save another call to OpenWeaher API
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# Improvements
+- still need to add  more responsive styling to more different layouts like iPad, and mobile. Add tailwind variables in my index.css to avoid repeating styles
+- Adding a mock server to fetch data / making some mock data and using it in test cases.
+- Could add more strict types as it contains some type warnings, I kind of skipped these in `vite build`
+- 
