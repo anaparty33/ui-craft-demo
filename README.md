@@ -21,9 +21,10 @@ I recommend playing around using the search input field  (which is powered by Go
 
 
 # Improvements
-- still need to add  more responsive styling to more different layouts like iPad, and mobile. Add tailwind variables in my index.css to avoid repeating styles
+- still need to add  more responsive styling layouts like iPad, and mobile. Add tailwind variables in my index.css to avoid repeating styles
+- Could use the serverless function to make requests and this serverless function fetches the data for me from API and sends back a response to the browser
 - Adding a mock server to fetch data / making some mock data and using it in test cases.
 - Could add more strict types as it contains some type warnings, I kind of skipped these in `vite build`
 - Minifying builds
 - using CMS for text instead of hardcoding in React components.
-- Adding Data attributes to elements to ease up the testing process. Writing more accessible semantic HTML, ARIA labels in components
+- Adding Data attributes to elements to ease up the testing process. Writing more accessible semantic HTML, and ARIA labels in components
