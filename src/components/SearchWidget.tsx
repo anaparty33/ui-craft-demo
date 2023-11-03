@@ -58,8 +58,11 @@ function SearchWidget() {
 
   return (
     <div className="w-full flex flex-row justify-center items-center space-x-4">
+      <label> </label>
       <input
+        data-testid="search-city"
         type="text"
+        name="search-city"
         ref={searchTerm}
         placeholder="search city..."
         className="w-1/2 focus:outline-none p-2.5 rounded-md"

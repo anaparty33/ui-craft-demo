@@ -29,8 +29,8 @@ function DayForeacastCard({ day, timezone, unit }: DayForecastCardProps) {
         id={day.weather[0].id}
         size={75}
       />
-      <p>⬆ {formatTemparature(day.temp.max, unit)}</p>
-      <p>⬇ {formatTemparature(day.temp.min, unit)}</p>
+      <p data-testid="max-temp">⬆ {formatTemparature(day.temp.max, unit)}</p>
+      <p data-testid="min-temp">⬇ {formatTemparature(day.temp.min, unit)}</p>
       <p> {day.weather[0].description}</p>
     </div>
   );

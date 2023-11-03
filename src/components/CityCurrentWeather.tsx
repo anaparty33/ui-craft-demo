@@ -43,8 +43,10 @@ function CityCurrentWeather() {
         <div className="flex flex-row justify-start space-x-12">
           <div className="flex flex-row items-center justify-between text-white p-3 w-1/3 shadow-lg rounded-lg bg-gradient-to-br from-cyan-700 to-blue-700 ">
             <div className="mt-5">
-              <p className="text-xl">{"name" in data && data.name} </p>
-              <p className="text-xs p-2">
+              <p className="text-xl" data-testid="city-name">
+                {"name" in data && data.name}{" "}
+              </p>
+              <p className="text-xs p-2" data-testid="country">
                 {formatCurrentWeather(data).country}
               </p>
               <p className="text-4xl">{`${formatTemparature(
@@ -55,7 +57,10 @@ function CityCurrentWeather() {
                 <div className="flex font-light text-sm items-center justify-center">
                   <FaTemperatureFull size={18} className="mr-1" />
                   Feel Like:
-                  <span className="font-medium ml-1">{`${formatTemparature(
+                  <span
+                    className="font-medium ml-1"
+                    data-testid="feels-like"
+                  >{`${formatTemparature(
                     formatCurrentWeather(data).feels_like,
                     unit
                   )}`}</span>
@@ -63,14 +68,15 @@ function CityCurrentWeather() {
                 <p className="flex font-light text-sm items-center justify-center">
                   <WiHumidity size={18} className="mr-1" />
                   Humidity:
-                  <span className="font-medium ml-1">{`${formatCurrentWeather(
-                    data
-                  ).humidity.toFixed()}%`}</span>
+                  <span
+                    className="font-medium ml-1"
+                    data-testid="humidity"
+                  >{`${formatCurrentWeather(data).humidity.toFixed()}%`}</span>
                 </p>
                 <p className="flex font-light text-sm items-center justify-center">
                   <GiPressureCooker size={18} />
                   Pressure:
-                  <span className="font-medium ml-1">
+                  <span className="font-medium ml-1" data-testid="pressure">
                     {formatPressure(formatCurrentWeather(data).pressure, unit)}
                   </span>
                 </p>

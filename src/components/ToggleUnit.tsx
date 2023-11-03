@@ -15,16 +15,21 @@ function ToggleUnit() {
   const dispatch = useDispatch();
 
   return (
-    <select
-      value={currentUnit}
-      onChange={(e) => {
-        console.log(e.target.value);
-        dispatch(updateUnits(e.target.value));
-      }}
-    >
-      <option value={otheroption}> {mapUnits[otheroption[0]]}</option>
-      <option value={currentUnit}> {mapUnits[currentUnit]}</option>
-    </select>
+    <>
+      <label htmlFor="unit"></label>
+      <select
+        id="unit"
+        data-testid="select-unit"
+        value={currentUnit}
+        onChange={(e) => {
+          console.log(e.target.value);
+          dispatch(updateUnits(e.target.value));
+        }}
+      >
+        <option value={otheroption}> {mapUnits[otheroption[0]]}</option>
+        <option value={currentUnit}> {mapUnits[currentUnit]}</option>
+      </select>
+    </>
   );
 }
 

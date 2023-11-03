@@ -9,7 +9,9 @@ function LocalTimeWidget({ timeZone }: LocalTimeWidgetProps) {
   return (
     <div className="flex flex-col items-center p-4  h-full shadow-lg bg-gradient-to-br from-cyan-700 to-blue-700 rounded-lg">
       <AiOutlineClockCircle size={40} />
-      <p>{formatCurentTime(timeZone, "ccc, dd LLL'   'hh:mm a")}</p>
+      <p data-testid="local-time">
+        {formatCurentTime(timeZone, "ccc, dd LLL'   'hh:mm a")}
+      </p>
     </div>
   );
 }
