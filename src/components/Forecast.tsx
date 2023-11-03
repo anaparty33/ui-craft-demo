@@ -24,7 +24,7 @@ function Forecast() {
       {error && <div>{error}</div>}
       <div className=" rounded-lg shadow-lg  text-white   mt-5">
         <p className="pt-4 mb-4 text-xl"> Next 14 Days</p>
-        <div className="grid grid-cols-7 grid-rows-2 gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-7 sm:grid-cols-3 grid-rows-2 gap-4">
           {data &&
             "list" in data &&
             Array.isArray(data.list) &&

@@ -21,12 +21,13 @@ function SearchWidget() {
 
   const handleMyLocation = async () => {
     await reverseGeoCode(myLocationCoordinates);
-    if (myLocationCoordinates) {
-      const {
-        coords: { latitude, longitude },
-      } = myLocationCoordinates;
-      dispatch(updateCoords({ latitude, longitude }));
-    }
+    if (!myLocationCoordinates)
+      alert("Please refresh the page after allowing location access");
+
+    const {
+      coords: { latitude, longitude },
+    } = myLocationCoordinates;
+    dispatch(updateCoords({ latitude, longitude }));
   };
 
   const onChangeAddress = (autocomplete) => {

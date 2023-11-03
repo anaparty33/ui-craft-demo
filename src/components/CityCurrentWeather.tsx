@@ -40,8 +40,8 @@ function CityCurrentWeather() {
       {isPending && <LoaderSpinner />}
       {error && <div>{error}</div>}
       {!isNull(data) && (
-        <div className="flex flex-row justify-start space-x-12">
-          <div className="flex flex-row items-center justify-between text-white p-3 w-1/3 shadow-lg rounded-lg bg-gradient-to-br from-cyan-700 to-blue-700 ">
+        <div className="sm:flex flex-row justify-start space-x-12">
+          <div className="sm:flex flex-row items-center justify-between text-white p-3 w-1/3 shadow-lg rounded-lg bg-gradient-to-br from-cyan-700 to-blue-700 ">
             <div className="mt-5">
               <p className="text-xl" data-testid="city-name">
                 {"name" in data && data.name}{" "}
